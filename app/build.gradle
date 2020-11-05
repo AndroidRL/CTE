@@ -1,0 +1,143 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.phoenix.counttoearn"
+        minSdkVersion 22
+        targetSdkVersion 30
+        versionCode 17
+        versionName "1.2.8"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildscript {
+        repositories {
+            jcenter()
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    implementation 'com.google.firebase:firebase-storage:19.2.0'
+    implementation 'com.google.firebase:firebase-auth:19.4.0'
+    implementation 'com.google.firebase:firebase-dynamic-links:19.1.0'
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    /*recycle card and material*/
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.google.android.material:material:1.2.1'
+
+
+    /*retrofit*/
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.8.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.8.1'
+
+    /*pogresbar*/
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+
+    /*country*/
+    implementation 'com.github.joielechong:countrycodepicker:2.4.2'
+
+    /*otp*/
+    implementation 'com.github.aabhasr1:OtpView:v1.1.2'
+
+    /*timer json uses*/
+    implementation 'com.airbnb.android:lottie:3.4.1'
+
+    /*gif file set*/
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.17'
+
+    /*Imge picker*/
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.github.maayyaannkk:ImagePicker:1.0.5'
+    implementation 'com.github.dhaval2404:imagepicker-support:1.7.1'
+
+    /*lod image*/
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    // Material Dialog Library
+    implementation 'com.shreyaspatil:MaterialDialog:2.1'
+
+    // Material Design Library
+    implementation 'com.google.android.material:material:1.2.0'
+
+    // Lottie Animation Library
+    implementation 'com.airbnb.android:lottie:3.4.1'
+
+    /*photos uploding*/
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.13'
+
+    //Add this line
+    implementation 'net.gotev:uploadservice:2.1'
+
+    /*Google ads*/
+//    implementation 'com.google.android.gms:play-services-ads:19.3.0'
+
+
+    /*startapp ads*/
+//  implementation 'com.startapp:inapp-sdk:4.6.+'
+
+    // Vungle SDK
+//    implementation 'com.vungle:publisher-sdk-android:6.7.0'
+//
+//    implementation 'androidx.core:core:1.3.1'
+//    implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.0.0'
+
+    // When appcompat is being used, core and localbroadcastmanager are the dependencies
+    // that is getting included
+    // implementation 'androidx.appcompat:appcompat:1.1.0'
+
+    // Recommended for SDK to be able to get Android Advertising ID
+    implementation 'com.google.android.gms:play-services-basement:17.3.0'
+    implementation 'com.google.android.gms:play-services-ads-identifier:17.0.0'
+
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.8.1'
+
+
+    /*RATE*/
+//    implementation 'com.github.hotchemi:android-rate:1.0.1'
+
+    /fcebook/
+    implementation 'androidx.annotation:annotation:1.1.0'
+    implementation 'com.facebook.android:audience-network-sdk:6.0.0'
+
+
+    /*play store updarte*/
+    implementation 'com.google.android.play:core:1.8.0'
+
+
+
+
+
+}

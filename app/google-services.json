@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "527778480741",
+    "firebase_url": "https://countto-earn-f8272.firebaseio.com",
+    "project_id": "countto-earn-f8272",
+    "storage_bucket": "countto-earn-f8272.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:527778480741:android:ec5a8b5aee00df7950fc8c",
+        "android_client_info": {
+          "package_name": "com.phoenix.counttoearn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "527778480741-989rg64f4p6qgmf32jk07vs2d4k3nfpt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.phoenix.counttoearn",
+            "certificate_hash": "c50c1156038e2ada6cc3eaf6c57a3ae0895a6846"
+          }
+        },
+        {
+          "client_id": "527778480741-o8577fqu9ji2a8o5su6bck8n6v60gl9t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrYnKtukOf4mtbZHas-WLKFFsBqwqe3ww"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "527778480741-o8577fqu9ji2a8o5su6bck8n6v60gl9t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

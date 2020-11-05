@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundtwo"
+    tools:context="com.example.counttoearn.Activity.OtpLoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:onClick="back"
+            android:src="@drawable/ic_chevron_left_black_24dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="8dp"
+            android:text="OTP"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/time_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="08dp"
+            android:text="00:00"
+            android:visibility="gone"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/resend_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="08dp"
+            android:text="Resend OTP"
+            android:visibility="gone"
+            android:textColor="@color/blue"
+            android:textSize="20dp" />
+
+
+        <in.aabhasjindal.otptextview.OtpTextView
+            android:id="@+id/et_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="05dp"
+            android:textColor="@color/black"
+            app:bar_active_color="@color/black"
+            app:bar_enabled="true"
+            app:bar_error_color="@color/red"
+            app:bar_inactive_color="@color/black"
+            app:bar_success_color="@color/black"
+            app:box_margin="05dp"
+            app:length="6"
+            app:otp_text_size="18dp"
+            app:width="40dp" />
+
+
+        <Button
+            android:id="@+id/btn_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/ansone"
+            android:enabled="true"
+            android:text="Let's GO"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

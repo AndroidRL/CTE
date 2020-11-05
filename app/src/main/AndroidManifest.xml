@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.counttoearn">
+
+    <uses-sdk android:targetSdkVersion="28" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE"
+        tools:node="remove" />
+
+    <application
+        android:name=".MyPrefrence"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup,icon,theme,label">
+        <activity android:name=".Activity.WatchCoinActivity"></activity>
+        <activity android:name=".Activity.WithdrawListActivity" />
+        <activity android:name=".Util.NoInternetActivity" />
+        <activity android:name=".Activity.WithdrawActivity" />
+        <activity android:name=".Activity.MoreAppActivity" />
+        <activity android:name=".Activity.TopplayerActivity" />
+        <activity android:name=".Activity.HowtoplayActivity" />
+        <activity android:name=".Activity.ProfileActivity" />
+        <activity android:name=".Activity.SingUpActivity" />
+        <activity android:name=".Activity.QuestionScreenActivity" />
+        <activity android:name=".Activity.UpdateActiovity" />
+        <activity android:name=".Activity.LoginActivity" />
+        <activity android:name=".Activity.MainActivity" />
+        <activity android:name=".Activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="counttoearn.page.link"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.OtpLoginActivity" />
+
+<!--        <meta-data-->
+<!--            android:name="com.google.android.gms.ads.APPLICATION_ID"-->
+<!--            android:value="ca-app-pub-3940256099942544~3347511713" /> &lt;!&ndash; android:value="ca-app-pub-7528823107761126~3266963101" /> &ndash;&gt;-->
+<!--        <meta-data android:name="com.facebook.sdk.AutoLogAppEventsEnabled"-->
+<!--            android:value="false"/>-->
+
+        <service
+            android:name=".Util.SoundService"
+            android:enabled="true" />
+    </application>
+
+</manifest>
